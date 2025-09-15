@@ -10,6 +10,11 @@ public class task2 {
         for(int i=1;i<=subject;i++){
             System.out.println("enter the subject " +(i)+ " marks");
               n1=sc.nextInt();
+               if (n1 < 0 || n1 > 100) {
+                System.out.println(" Invalid input! Marks must be between 0 and 100.");
+                i--;
+                continue;
+            }
                 sum=total(n1,sum);
         }
          
